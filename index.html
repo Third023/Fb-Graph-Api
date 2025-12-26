@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Facebook Login - OAuth 2.0</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="login-box" id="login-box">
+    <h2>Login with Facebook</h2>
+    <button class="login-btn fb-btn" onclick="loginWithFacebook()">
+      <span class="fb-icon">f</span>
+      Continue with Facebook
+    </button>
+  </div>
+
+  <div class="profile" id="profile" style="display:none;">
+    <img id="picture" width="100" alt="Profile Picture">
+    <h3 id="name"></h3>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+</div>
+<button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

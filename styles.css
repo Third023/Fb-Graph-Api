@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #e4ecf7, #f0f2f5);
+  margin: 0;
+  padding: 30px 15px;
+}
+
+/* Layout */
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Card */
+.login-box {
+  background: #ffffff;
+  padding: 32px 28px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-3px);
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #1c1e21;
+}
+
+/* Buttons */
+.login-btn,
+.logout-btn {
+  background: #1877f2;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 14px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+  background: #166fe5;
+  transform: translateY(-1px);
+}
+
+.logout-btn {
+  background: #e53935;
+}
+
+.logout-btn:hover {
+  background: #c62828;
+}
+
+/* Profile */
+.profile {
+  margin-top: 25px;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  border: 4px solid #1877f2;
+  object-fit: cover;
+}
+
+.profile h3 {
+  margin: 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #050505;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 24px 20px;
+  }
+
+  .profile img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+
+
+.fb-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #1877f2;
+  color: #fff;
+  font-weight: 600;
+}
+
+.fb-btn:hover {
+  background: #166fe5;
+}
+
+.fb-icon {
+  background: #ffffff;
+  color: #1877f2;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+/* Toggle Button */
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Dark Mode */
+body.dark {
+  background: linear-gradient(135deg, #18191a, #242526);
+}
+
+body.dark .login-box {
+  background: #242526;
+  color: #e4e6eb;
+}
+
+body.dark h2,
+body.dark h3 {
+  color: #e4e6eb;
+}
+
+body.dark .fb-btn {
+  background: #1877f2;
+}
+
+body.dark .logout-btn {
+  background: #e53935;
+}
+
+body.dark .dark-toggle {
+  background: #3a3b3c;
+  color: #ffffff;
+}
