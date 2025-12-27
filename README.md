@@ -40,6 +40,6 @@ node server.js
 6. Open index.html in your browser or serve via a local server.
 
 COLLABORATORS
-1. Alfredo O. Gonzales III-
-2. Lindsy Jane D. Cruz
-3. John Rey T. Manuel
+1. Alfredo O. Gonzales III -  frontend and backend dev, api integration, github & documentation manager, tester
+2. Lindsy Jane D. Cruz -  frontend dev, tester
+3. John Rey T. Manuel -  fronted dev, tester
