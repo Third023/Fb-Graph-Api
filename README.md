@@ -38,3 +38,6 @@ PORT=3000
 node server.js
 
 6. Open index.html in your browser or serve via a local server.
+
+COLLABORATORS
+1. Alfredo O. Gonzales III-
