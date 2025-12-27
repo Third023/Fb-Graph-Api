@@ -42,3 +42,4 @@ node server.js
 COLLABORATORS
 1. Alfredo O. Gonzales III-
 2. Lindsy Jane D. Cruz
+3. John Rey T. Manuel
